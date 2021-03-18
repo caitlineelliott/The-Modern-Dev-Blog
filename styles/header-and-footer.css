@@ -1,0 +1,339 @@
+/* header container */
+.index-header {
+    width: 100vw;
+    margin-left: -23px;
+    margin-top: 38px;
+    height: 65vh;
+    background: url(../images/header-image-2.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    overflow: hidden;
+    border-bottom: 2px solid #e8C547;
+}
+
+/* page title and info */
+.header-content {
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.index-h1 {
+    color: #30323d;
+    font: 7.5vw "bebas neue", cursive;
+    line-height: 6vw;
+    width: 50%;
+}
+
+.blog-post-h1 {
+    font: 9vh "bebas neue", cursive;
+    line-height: 8.5vh;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+/* subtitle containter */
+.subtitle {
+    width: 100vw;
+    margin-left: -23px;
+    height: 7vh;
+    border-bottom: 2px solid #e8C547;
+}
+
+.subtitle-content {
+    font-size: 1.6vw;
+    font-style: italic;
+    color: #30323d;
+    font-weight: 100;
+}
+
+/* footer */
+
+.footer {
+    width: 100vw;
+    margin-left: -23px;
+    height: 38vh;
+    background-color: #30323d;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+/* footer left column - branding */
+.footer-tagline {
+    color: #eef;
+    width: 33%;
+    margin-right: -16px;
+}
+
+.footer-tagline-heading {
+    color: #eef;
+    font: 2.2rem "bebas neue", sans-serif;
+    margin: 0;
+}
+
+.footer-tagline-icon {
+    color: #eef;
+    margin-bottom: 5px;
+    font-size: 2vw;
+}
+
+.footer-tagline-subtitle {
+    color: #eef;
+    font-size: 1.1vw;
+    font-weight: 100;
+    margin-top: 0;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+
+/* footer center column - subscribe form */
+.footer-subscribe {
+    color: #eef;
+    border-left: 1px solid rgba(238, 238, 255,0.5);
+    border-right: 1px solid rgba(238, 238, 255,0.5);
+    width: 33%;
+}
+
+.footer-subscribe-heading {
+    color: #eef;
+    font: 3.6vh "bebas neue", sans-serif;
+    margin: 0;
+}
+
+.newsletter-form {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.newsletter-form-fields {
+    width: 15vw;
+    margin: 10px 0 5px 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.submit-button {
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background: #e8C547;
+    display: block;
+    border: 2px solid #d1b140;
+    border-radius: 5px;
+    width: 16.75vw;
+    color: #30323d;
+}
+
+.submit-button:hover {
+    color: #eef;
+    cursor: pointer;
+    background: #ba9e39;
+    border: 2px solid #a28a32;
+    transition: color 500ms, border 500ms, background 500ms;
+}
+
+/* footer right column - social icons */
+
+.footer-social {
+    width: 33%;
+    text-align: center;
+}
+
+.footer-social-icons {
+    color: #fdfffc;
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
+
+.footer-social-icons:hover {
+    color: #e8C547;
+    transition: color 500ms;
+}
+
+/* xs screen styles */
+
+@media only screen
+and (min-width : 275px)
+and (max-width : 376px) {
+
+    .index-header {
+        height: 40vh;
+        background-position: bottom;
+        border: 0;
+    }
+
+    .header-content {
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 20px;
+      height: 10vh;
+    }
+
+   .index-h1 {
+      font-size: 4vh;
+      line-height: 4.25vh;
+    }
+
+    .subtitle {
+        width: 0;
+        height: 0;
+    }
+
+    .subtitle-content {
+        display: none;
+    }
+
+    .blog-post-h1 {
+        color: #ba9e39;
+        font-size: 8vh;
+        line-height: 7vh;
+    }
+
+    .footer {
+        margin-left: -8px;
+        height: 20vh;
+    }
+
+    .footer-tagline {
+        display: none;
+    }
+
+    .footer-subscribe {
+        display: none;
+    }
+
+    .footer-social {
+        width: 100%;
+    }
+
+    .footer-social-icons {
+        font-size: 1rem;
+    }
+}
+
+/* s mobile styles - pixel 2, pixel 2 xl, iphone5,
+iphone 6/7/8, iphone 6/7/8+ */
+
+@media screen
+and (min-device-width : 377px)
+and (max-device-width : 539px) {
+    .index-header {
+        height: 35vh;
+        background-position: bottom;
+        margin-left: -8px;
+        border: none;
+    }
+
+    .header-content {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .index-h1 {
+        font-size: 9.5vw;
+    }
+
+    .blog-post-h1 {
+        font: 6vh "bebas neue", cursive;
+        line-height: 5vh;
+    }
+
+    .subtitle {
+        height: 0;
+        width: 0;
+    }
+
+    .subtitle-content {
+        display: none;
+    }
+
+    .footer {
+        margin-left: -8px;
+        height: 20vh;
+    }
+
+    .footer-tagline {
+        display: none;
+    }
+
+    .footer-subscribe {
+        display: none;
+    }
+
+    .footer-social {
+        width: 100%;
+    }
+
+    .footer-social-icons {
+        font-size: 1rem;
+    }
+}
+
+/* tablet styles */
+
+@media screen
+and (min-device-width : 536px)
+and (max-device-width : 1100px) {
+    .index-header {
+        height: 45vh;
+        background-position: bottom;
+        margin-left: -10px;
+    }
+
+    .header-content {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .index-h1 {
+        font-size: 9.5vw;
+
+    }
+
+    .subtitle {
+        margin-left: -8px;
+    }
+
+    .subtitle-content {
+        font-size: 2vh;
+        width: 90%;
+        text-align: center;
+    }
+
+    .footer {
+        float: right;
+        margin-right: -7.5px;
+        height: 30vh;
+    }
+
+    .footer-subscribe {
+        width: 100%;
+        border: none;
+    }
+
+    .footer-tagline {
+        display: none;
+    }
+
+    .footer-social {
+        margin-top: -8vh;
+    }
+}
