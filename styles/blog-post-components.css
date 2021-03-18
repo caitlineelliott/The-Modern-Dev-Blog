@@ -1,0 +1,273 @@
+/* headings */
+.blog-post-subheadings {
+    text-transform: uppercase;
+    color: #e8C547;
+    font-size: 1.2rem;
+}
+
+/* author link */
+.blog-post-author {
+    text-decoration: underline;
+}
+
+/* images */
+.post-images {
+    float: right;
+    clear: right;
+}
+
+/* box shadow styling adapted from w3schools: 09/08/20 - (https://www.w3schools.com/cssref/css3_pr_box-shadow.asp) */
+.ex1 {
+    width: 350px;
+    height: 200px;
+    box-shadow: 10px 10px #e8C547;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 10px;
+    border: 1px solid #e8C547;
+}
+
+.image-captions {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+/* blog quotations */
+.post-blockquote {
+    border-left: 5px solid #30323d;
+    color: #e8C547;
+    font-size: 1.25rem;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+/* post footer */
+.post-footer {
+    height: 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "tags social";
+}
+
+/* tags */
+.tags {
+    grid-area: tags;
+    text-align: left;
+    color: #30223d;
+    font-size: 1vw;
+}
+
+.tags a:hover {
+    transition: linear 300ms;
+    color: #e8c547;
+}
+
+/* sharing icons */
+
+.social-sharing {
+    grid-area: social;
+    font-size: 1vw;
+    text-align: right;
+}
+
+.post-social-icons {
+    font-size: 1vw;
+    color: #30323d;
+    padding-right: 10px;
+}
+
+.fa-linkedin {
+    margin-right: -10px;
+}
+
+.fa-envelope {
+    padding-left: 10px;
+}
+
+.post-social-icons:hover {
+    color: #e8C547;
+    transition: color 300ms;
+}
+
+/* author card */
+.author {
+    width: 95%;
+    box-shadow: 10px 10px #e8C547;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e8C547;
+    padding: 10px;
+}
+
+.author-image-section {
+    float: left;
+    padding-top: 13px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.author-bio {
+    height: 100%;
+    text-align: left;
+    line-height: 0.5vh;
+    top: 50%;
+    padding-top: 5px;
+}
+
+.description {
+    font-size: 1vw;
+    line-height: 2vh;
+}
+
+.bio-text {
+    font-weight: bold;
+}
+
+.author-thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+@media screen
+and (min-width : 275px)
+and (max-width : 539px) {
+    .metadata {
+        font-size: 3vw;
+    }
+
+    .post-images {
+        float:none;
+    }
+
+    .ex1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .post-blockquote {
+        font-size: 4vw;
+    }
+
+    .post-text {
+        padding-bottom: 0;
+    }
+
+    .post-footer {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "tags"
+        "social";
+    }
+
+    .tags {
+        grid-area: tags;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .social-sharing {
+        grid-area: social;
+        text-align: center;
+        font-size: 3vw;
+        margin-top: 5px;
+    }
+
+    .post-social-icons {
+        font-size: 2.5vw;
+    }
+
+    .author {
+        box-shadow: none;
+    }
+
+    .author-image-section {
+        padding: 5px;
+    }
+
+    .author-thumbnail {
+        width: 90px;
+        height: 90px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .blog-post-subheadings {
+        font-size: 4vw;
+    }
+
+    .author-bio {
+        padding: 0;
+        font-size: 3vw;
+        line-height:0.25vh;
+    }
+
+    .description {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen
+and (min-device-width : 536px)
+and (max-device-width : 1100px) {
+
+    .post-footer {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "tags"
+        "social";
+    }
+
+    .tags {
+        grid-area: tags;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .social-sharing {
+        grid-area: social;
+        text-align: center;
+        font-size: 2vw;
+        margin-top: 20px;
+    }
+
+    .post-social-icons {
+        font-size: 2vw;
+    }
+
+    .author {
+        margin-top: 75px;
+    }
+
+    .author-image-section {
+        padding: 25px;
+    }
+
+    .author-thumbnail {
+        width: 200px;
+        height: 200px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    .blog-post-subheadings {
+        font-size: 4vw;
+    }
+
+    .author-bio {
+        padding: 0;
+        font-size: 3vw;
+        line-height:0.25vh;
+    }
+
+    .description {
+        font-size: 2.5vw;
+    }
+}
