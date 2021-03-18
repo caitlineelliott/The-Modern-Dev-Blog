@@ -1,0 +1,127 @@
+/* box styles */
+
+.related-posts {
+    width: 100vw;
+    margin-left: -23px;
+    height: 56vh;
+    background: #e8C547;
+    overflow: hidden;
+    border-bottom: 2px solid #e8C547;
+    text-align: center;
+}
+
+/* title styles */
+.related {
+    color: #30323d;
+    font-size: 3rem;
+    font-family: "bebas neue", cursive;
+    background: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* carousel styles */
+.posts-carousel {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.arrows,
+.blog-cards {
+    margin: 15px;
+}
+
+.arrows {
+    align-self: center;
+    font-size: 5vh;
+    color: #30323d;
+}
+
+.arrows:hover {
+    color: #30323d;
+    color: #eeeeff;
+    transition: color 300ms;
+    cursor: pointer;
+}
+
+/* scale on hover styling adapted from css-tricks.com: 09/09/20 - (https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/) */
+.blog-cards {
+    height: 33vh;
+    width: 25vw;
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+
+.blog-cards:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* blog card titles */
+.post-title {
+    font-family: "bebas neue", cursive;
+    font-size: 1.5rem;
+    background: #e8C547;
+    width: 100%;
+    z-index: 110;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* blog card images */
+.thumbnail {
+    width: 100%;
+    height: 2vh;
+    background-size: contain;
+}
+
+/* xs screen styles */
+
+@media screen
+and (min-width : 275px)
+and (max-width : 539px) {
+    .related-posts {
+        height: 45vh;
+        margin-left: -8px;
+    }
+
+    /* nth-of-type styling adapted from MDN - 09/08/20 (https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) */
+    .blog-cards:nth-child(n+3) {
+        display: none;
+    }
+
+    .blog-cards {
+        height: 25vh;
+        width: 45vw;
+    }
+
+    .thumbnail {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/* tablet styles */
+
+@media screen
+and (min-device-width : 536px)
+and (max-device-width : 1100px) {
+    .related-posts {
+        height: 30vh;
+        margin-left: -8px;
+    }
+
+    .blog-cards {
+        height: 15vh;
+        width: 35vw;
+    }
+
+    .thumbnail {
+        height: 150px;
+        width: 150px;
+    }
+}
