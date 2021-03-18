@@ -68,3 +68,58 @@ a {
     color: #eef;
     transition: color 300ms;
 }
+
+/* xs mobile styles - galaxy fold, moto g4, iphone x, iphone5 */
+@media screen
+and (min-width : 275px)
+and (max-width : 539px) {
+    .blog-content {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .older-posts {
+        margin-left: -8px;
+    }
+}
+
+/* tablet styles */
+
+@media screen
+and (min-width : 536px)
+and (max-width : 1024px) {
+    .blog-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .blog-cards:nth-child(n+10) {
+        display: inline;
+    }
+
+    .older-posts-links {
+        font-size: 3.5vw;
+    }
+
+    .older-posts {
+        margin-left: -8px;
+    }
+}
+
+/* xl screen styles */
+
+@media screen
+and (min-width : 1300px) {
+    .blog-content {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* nth-of-type styling adapted from MDN - 09/08/20 (https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) */
+    .blog-cards:nth-child(n+9) {
+        display: none;
+    }
+}
