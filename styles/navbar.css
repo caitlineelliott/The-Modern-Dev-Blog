@@ -1,0 +1,60 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 46px;
+    padding-right: 10px;
+    margin-left: -15px;
+    background: #e8c547;
+    z-index: 100;
+    font: 1rem "roboto", cursive;
+  }
+
+
+/* nav icon & website title styles */
+.title {
+    float: left;
+    color: #30323d;
+    font: 1.8rem "bebas neue", sans-serif;
+    padding: 7px 26px;
+}
+
+/* nav links styles */
+.nav-links-section {
+    float: right;
+    padding-top: 12px;
+}
+
+.nav-links {
+    color:#30323d;
+    padding: 16px 15px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.nav-links:hover {
+    background-color: #30323d;
+    transition: linear 500ms;
+    color: #eeeeff;
+}
+
+/* xs mobile styles - galaxy fold, moto g4, iphone x */
+@media screen
+and (min-device-width : 275px)
+and (max-device-width : 410px) {
+    .home-link,
+    .nav-text,
+    .nav-links {
+      display: none;
+    }
+}
+
+/* s screen styles */
+@media screen
+and (min-device-width : 411px)
+and (max-device-width : 600px) {
+    .home-link,
+    .nav-text {
+      display: none;
+    }
+}
