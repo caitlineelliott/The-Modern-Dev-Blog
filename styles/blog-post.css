@@ -34,3 +34,14 @@ a {
     width: 50%;
     height: 100%;
 }
+
+/* main content */
+
+.blog-post {
+    padding: 10px 20px;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
