@@ -15,3 +15,22 @@ a {
     color: #30323d;
     text-decoration: none;
 }
+
+/* header */
+.blog-post-header {
+    height: 30vh;
+    background-image: url(../images/wireframes.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    overflow: hidden;
+    border-bottom: 2px solid #e8C547;
+    margin-left: -23px;
+    width: 100vw;
+    margin-top: 38px;
+}
+
+.header-content {
+    width: 50%;
+    height: 100%;
+}
