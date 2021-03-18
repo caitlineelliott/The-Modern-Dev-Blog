@@ -1,0 +1,136 @@
+/* blog cards */
+/* box shadow styling adapted from w3schools: 09/08/20 - (https://www.w3schools.com/cssref/css3_pr_box-shadow.asp) */
+.blog-cards {
+    background: #fdfffc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.2);
+}
+
+/* blog card thumbnail */
+.blog-image {
+    overflow: hidden;
+}
+
+/* scale on hover styling adapted from css-tricks.com: 09/09/20 - (https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/) */
+.thumbnail {
+    width: 100%;
+    height: 33vh;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    transition: all 300ms ease-in-out;
+    margin-bottom: -5px;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    }
+
+/* blog preview box styles */
+.blog-preview {
+    padding: 0 20px;
+    border-top: 1px solid #e8c547;
+    border-bottom: 1px solid #e8c547;
+}
+
+/* post title */
+.post-title-text {
+    font-family: "bebas neue", cursive;
+    font-size: 1.5rem;
+    background: #e8c547;
+    padding: 6px 5px 5px 20px;
+    margin-left: -20px;
+    width: 66%;
+    border-radius: 0 5px 5px 0;
+    color: #30223d;
+}
+
+.post-title-text:hover {
+    font-family: "bebas neue", cursive;
+    font-size: 1.5rem;
+    background: #30223d;
+    padding: 6px 5px 5px 20px;
+    margin-left: -20px;
+    width: 66%;
+    border-radius: 0 5px 5px 0;
+    color: #eeeeff;
+    transition: color 500ms, background-color 500ms;
+}
+
+/* timestamp */
+.metadata {
+    font-size: 0.9em;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* blog text preview */
+.post-text {
+    padding-bottom: 20px;
+    font-size: 0.9em;
+}
+
+/* like / comment / read more styles */
+
+/* likes and comments */
+.like-comment {
+    float: left;
+}
+
+.like-comment-link {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #e8c547;
+}
+
+/* padding between icons */
+.fa-comments {
+    padding-left: 10px;
+}
+
+/* read more link */
+.read-more {
+    float: right;
+}
+
+.read-more-link {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #e8c547;
+}
+
+/* likes comments and read more hover effects */
+.read-more-link:hover,
+.like-comment-link:hover {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #30223d;
+    transition: color 300ms;
+}
+
+/* small screens */
+
+@media only screen
+and (min-width : 275px)
+and (max-width : 539px) {
+
+    .thumbnail {
+        height: 25vh;
+    }
+}
+
+/* med screens */
+
+@media screen
+and (min-device-width : 536px)
+and (max-device-width : 1100px) {
+
+    .thumbnail {
+        height: 15vh;
+    }
+}
