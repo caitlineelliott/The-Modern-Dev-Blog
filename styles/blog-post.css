@@ -45,3 +45,65 @@ a {
     margin-right: auto;
     text-align: justify;
 }
+
+
+/* xs screen styles */
+
+@media screen
+and (min-width : 275px)
+and (max-width : 539px) {
+    .blog-post-header {
+        height: 35vh;
+        background-position: bottom;
+        border: 0;
+    }
+
+    .header-content {
+      width: 50%;
+      margin-left: 30px;
+      height: 100%;
+    }
+
+    .blog-post {
+        width: 90%;
+        padding: 0;
+    }
+
+    .metadata {
+        font-size: 0.7rem;
+    }
+
+    .ex1 {
+        margin: 0 0 10px 0;
+    }
+
+    .footer {
+        margin-left: -8px;
+    }
+
+}
+
+/* tablet styles */
+
+@media screen
+and (min-device-width : 536px)
+and (max-device-width : 1100px) {
+    .index-header {
+        background-position: right;
+    }
+
+    .header-content {
+      width: 50%;
+      height: 100%;
+    }
+
+    .blog-post {
+        width: 85%;
+    }
+
+    .blog-post-h1 {
+        font: 7vh "bebas neue", cursive;
+        line-height: 6.5vh;
+    }
+
+}
