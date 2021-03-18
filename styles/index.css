@@ -1,0 +1,70 @@
+/* whole page styles */
+
+/* body & text elements */
+body {
+    background:#eef;
+    font: 11pt "roboto", sans-serif;
+    color: #30323d;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #30323d;
+}
+
+
+/* vertical and horizontal center */
+/* vertical and horizontal center styles adapted from w3schools: 09/09/20 - (https://www.w3schools.com/css/css_align.asp) */
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main page styles */
+
+/* blog container */
+.blog-content {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    background: #eef;
+}
+
+/* keeps post cards grid at full rows for lg screen sizes */
+/* nth-of-type styling adapted from MDN - 09/08/20 (https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) */
+.blog-cards:nth-child(n+10) {
+    display: none;
+}
+
+/* older posts box */
+.older-posts {
+    width: 100vw;
+    margin-left: -23px;
+    height: 8vh;
+    background: #e8C547;
+}
+
+.older-posts-icons {
+    font-weight: 400;
+}
+
+.older-posts-content {
+    font-weight: 400;
+    width: 60%;
+    text-align: center;
+}
+
+.older-posts-links {
+    color: #30323d;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.older-posts-links:hover {
+    color: #eef;
+    transition: color 300ms;
+}
