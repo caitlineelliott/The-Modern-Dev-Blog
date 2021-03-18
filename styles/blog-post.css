@@ -3,3 +3,15 @@
 @import "blog-post-components.css";
 @import "related-posts.css";
 @import "blog-cards.css";
+
+body {
+    background-color: #eef;
+    font: 1rem 'roboto', sans-serif;
+    color: #30323d;
+    margin-bottom: 0;
+}
+
+a {
+    color: #30323d;
+    text-decoration: none;
+}
