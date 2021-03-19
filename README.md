@@ -1,4 +1,4 @@
-# The-Modern-Dev-Blog
+# The Modern Dev Blog
 A two page blog website created as part of Udacity's Front End Web Developer Nanodegree
 
 <img src="https://i.ibb.co/n7WGn6S/Screen-Shot-2021-03-18-at-10-28-51-AM.png" width="50%" alt="The Modern Dev homepage screenshot"><img src="https://i.ibb.co/58Kx38n/Screen-Shot-2021-03-18-at-10-29-05-AM.png" width="50%" alt="The Modern Dev blog page screenshot">
