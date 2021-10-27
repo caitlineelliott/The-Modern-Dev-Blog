@@ -17,6 +17,10 @@ a {
     color: #30323d;
 }
 
+a:hover {
+    color: white;
+}
+
 
 /* vertical and horizontal center */
 /* vertical and horizontal center styles adapted from w3schools: 09/09/20 - (https://www.w3schools.com/css/css_align.asp) */
